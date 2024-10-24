@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string str;
+    cout << "Enter a string: ";
+    getline(cin, str);  // Read a full line of text
+
+  
+    string reversedStr = string(str.rbegin(), str.rend());
+
+    cout << "Reversed string: " << reversedStr << endl;  // Output reversed string
+    return 0;
+}
